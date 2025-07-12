@@ -2,7 +2,6 @@ import { Injectable } from "@angular/core";
 import { HttpClient, HttpErrorResponse, HttpHeaders } from "@angular/common/http";
 import { Observable, throwError } from "rxjs";
 import { catchError } from "rxjs/operators";
-import { environment } from "src/environments/environment";
 
 @Injectable({
   providedIn: "root",
@@ -23,7 +22,6 @@ export class CrudService {
     } else {
       console.error(`Backend returned code ${error.status}, body was: ${error.error}`);
     }
-
     this.errorData = {
       errorTitle: "Oops! Request for document failed",
       errorDesc: "Something bad happened. Please try again later.",
@@ -31,9 +29,7 @@ export class CrudService {
     return throwError(this.errorData);
   }
 
-  // User registration
   addUser(user: any): Observable<any> {
-    console.log("From Service", user);
     return this.http
       .post<any>(this.url + "userRegister.php", user, {
         headers: new HttpHeaders({ "Content-Type": "application/json" }),
@@ -42,19 +38,17 @@ export class CrudService {
       .pipe(catchError(this.handleError));
   }
 
-  // Contact form submission
   contactForm(formdata: any): Observable<any> {
     return this.http
       .post<any>(this.url + "contact", formdata, this.httpOptions)
       .pipe(catchError(this.handleError));
   }
 
-  // Feedback email
   sendFeedbackEmail(): Observable<any> {
     return this.http.get(this.url + "feedbackEmail.php");
   }
 
-  // ✅ NEW: Register inquiries method (fix for build error)
+  // ✅ Fix: Add this method
   registerInquiries(data: any): Observable<any> {
     return this.http
       .post<any>(this.url + "registerInquiries.php", data, this.httpOptions)
