@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+.flow-container {
+  font-family: "Raleway", sans-serif;
+}
+img {
+  /* border: solid 0.5px rgba(0, 0, 0, 0.05) !important; */
+  /* position: absolute !important; */
+  width: 100% !important;
+  height: 650px !important;
+  -webkit-animation: zoom 20s;
+  animation: zoom 20s;
+}
+
+h1 {
+  padding-bottom: 240px;
+  font-size: 70px;
+}
+
+h2 {
+  position: relative;
+  top: -240px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+a {
+  position: relative;
+  top: -212px;
+  font-family: "Raleway";
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 3px;
+  background-color: #21e0bd;
+  border-color: #21e0bd;
+  color: #050505;
+  border-radius: 1rem;
+}
+
+
+.carousel-effect slide .overlay-effect {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.overlay-effect {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(5, 5, 5, 0.6);
+  overflow: hidden;
+}
+
+a:hover {
+  color: #21e0bd;
+  background-color: #050505;
+  border-color: #473e3e;
+}
+
+p {
+  position: relative;
+  top: -50px;
+  width: 100%;
+  font-size: 24px;
+  right: -40px;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+  }
+  to {
+    -webkit-transform: scale(1.5, 1.5);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(2, 2);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    /* border: solid 0.5px rgba(0, 0, 0, 0.05) !important; */
+    /* position: absolute !important; */
+    width: 100% !important;
+    height: 265px !important;
+    -webkit-animation: zoom 20s;
+    animation: zoom 20s;
+  }
+
+  h1 {
+    padding-bottom: 90px;
+    font-size: 30px;
+  }
+  h2 {
+    position: relative;
+    top: -90px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  a {
+    position: relative;
+    top: 0;
+    font-family: "Raleway";
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 2;
+    letter-spacing: 1px;
+    background-color: #21e0bd;
+    border-color: #21e0bd;
+    color: #050505;
+    border-radius: 1rem;
+  }
+  p {
+    display: none;
+  }
+  .carousel-caption{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  img {
+    /* border: solid 0.5px rgba(0, 0, 0, 0.05) !important; */
+    /* position: absolute !important; */
+    width: 100% !important;
+    height: 650px !important;
+    -webkit-animation: zoom 20s;
+    animation: zoom 20s;
+  }
+}

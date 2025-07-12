@@ -1,0 +1,18 @@
+:host >>>.ng-image-slider .ng-image-slider-container .main{
+    background-color: cadetblue;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 1rem;
+    height: 245px;
+}
+
+:host >>> .ng-image-slider .ng-image-slider-container .main .main-inner .img-div img{
+    width: 300px;
+    height: 200px;
+    border-radius: 1rem;
+    border-image: 1px solid #fff;
+}
+
+:host >>> .ng-image-slider .ng-image-slider-container .main .next, .ng-image-slider .ng-image-slider-container .main .prev{
+    background-color: cadetblue;
+}

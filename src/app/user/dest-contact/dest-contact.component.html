@@ -1,0 +1,138 @@
+<div class="container">
+  <div class="col-12">
+    <div class="card" *ngIf="!toggle">
+      <h5 class="card-header">Contact Us - NCC Group</h5>
+      <div class="card-body">
+        <form
+          [formGroup]="registerForm"
+          (ngSubmit)="postregisterdata()"
+          autocomplete="off"
+        >
+          <div class="form-row">
+            <div class="form-group col-12">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fa fa-user"></i
+                  ></span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Name *"
+                  formControlName="name"
+                  class="form-control"
+                  [ngClass]="{
+                    'is-invalid': submitted && f.name.errors
+                  }"
+                />
+                <div
+                  *ngIf="submitted && f.name.errors"
+                  class="invalid-feedback"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-12">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fa fa-envelope"></i
+                  ></span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Email address *"
+                  formControlName="email"
+                  class="form-control"
+                  [ngClass]="{ 'is-invalid': submitted && f.email.errors }"
+                />
+                <div
+                  *ngIf="submitted && f.email.errors"
+                  class="invalid-feedback"
+                >
+                  <div *ngIf="f.email.errors.email">
+                    Email must be a valid email address
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-12">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"
+                    ><i class="fa fa-phone"></i
+                  ></span>
+                </div>
+                <input
+                  type="text"
+                  placeholder="Phone number *"
+                  formControlName="phone"
+                  class="form-control"
+                  [ngClass]="{ 'is-invalid': submitted && f.phone.errors }"
+                />
+                <div
+                  *ngIf="submitted && f.phone.errors"
+                  class="invalid-feedback"
+                >
+                  <div
+                    *ngIf="f.phone.touched && f.phone.errors.invalidNumber"
+                  >
+                    Enter a valid phone number
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-12">
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                placeholder="Message  *"
+                formControlName="message"
+                class="form-control"
+                [ngClass]="{ 'is-invalid': submitted && f.message.errors }"
+              ></textarea>
+              <div
+                *ngIf="submitted && f.message.errors"
+                class="invalid-feedback"
+              ></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group text-right col-12">
+              <button [disabled]="loading" class="btn btn-primary mr-1">
+                <span
+                  *ngIf="loading"
+                  class="spinner-border spinner-border-sm mr-1"
+                ></span
+                >Submit
+              </button>
+              <button
+                class="btn btn-secondary mr-1"
+                type="reset"
+                (click)="onReset()"
+              >
+                Reset
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div *ngIf="toggle" class="card contact-message">
+      <div class="contact-success">
+        <h2 class="success">Success!</h2>
+        <h4>Message has been successfully submitted.</h4>
+        <br />
+        <button (click)="gotohome()" class="btn btn-primary mr-1">
+          Submit again
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

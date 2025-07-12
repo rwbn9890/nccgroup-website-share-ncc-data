@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+@import "../node_modules/bootstrap-select/dist/css/bootstrap-select.css";
+@import "../node_modules/ngx-toastr/toastr.css";
+@import "../node_modules/@ng-select/ng-select/themes/default.theme.css";
+
+@import "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
+@import "../node_modules/font-awesome/css/font-awesome.css";
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/ngx-bootstrap/datepicker/bs-datepicker.css";
+@import "../node_modules/snazzy-info-window/dist/snazzy-info-window.css";
+@import "../node_modules/ngx-select-dropdown/dist/assets/style.css";
+
+/* @import "./assets/css/Raleway.css"; */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  /* font-family: Roboto, "Helvetica Neue", sans-serif; */
+}
+
+.multiselect-dropdown .dropdown-btn {
+  display: inline-block !important;
+  font-size: 1.1rem !important;
+  border-radius: 1rem !important;
+  padding: 0.9rem 1rem !important;
+  width: 100% !important;
+  /* padding: 6px 12px !important; */
+  margin-bottom: 0 !important;
+  /* font-size: 12px !important; */
+  font-weight: 400 !important;
+  line-height: 1.1 !important;
+  border: 1px solid blue !important;
+  text-align: left !important;
+  background-color: #fff !important;
+  vertical-align: middle !important;
+  cursor: pointer !important;
+  background-image: none !important;
+  /* border-radius: 4px !important; */
+}

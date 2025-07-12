@@ -1,0 +1,15 @@
+hr {
+  border-color: aquamarine;
+  background-color: white;
+  margin-top: 0rem;
+  margin-bottom: 0.1rem;
+}
+
+*,
+body {
+  background-color: white;
+}
+
+app-socialview {
+  overflow: auto;
+}

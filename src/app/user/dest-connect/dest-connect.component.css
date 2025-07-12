@@ -1,0 +1,33 @@
+.card-body {
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 5rem;
+  background-color: inherit;
+}
+.card{
+  background-color: inherit;
+}
+.card-header2,
+.card-body2 {
+  display: none;
+}
+hr {
+  background-color: aquamarine;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-weight: 400 !important;
+    color: black;
+    font-size: 1.5rem;
+  }
+  .card-body1,
+  .card-header1 {
+    display: none;
+  }
+  .card-header2,
+  .card-body2 {
+    display: block;
+  }
+}

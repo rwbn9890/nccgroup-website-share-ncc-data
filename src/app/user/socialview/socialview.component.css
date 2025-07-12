@@ -1,0 +1,46 @@
+.social-button {
+  font-size: x-large !important;
+}
+.facebook-btn-share {
+  color: #3b5998;
+}
+
+.twitter-btn-share {
+  color: #38a1f3;
+}
+
+.google-btn-share {
+  color: #ed3833;
+}
+
+.linkedin-btn-share {
+  color: #0077b5;
+}
+
+.d-none {
+  display: none !important;
+}
+.d-md-block {
+  display: block !important;
+}
+.d-lg-block {
+  display: block !important;
+}
+.d-xl-block {
+  display: block !important;
+}
+.web-share-btn {
+  position: fixed;
+  top: 40%;
+  left: -25px;
+  background: aquamarine;
+  padding-right: 12px;
+  padding-top: 15px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  text-anchor: inherit;
+}
+
+.mobilesocialshare {
+  list-style-type: none;
+}

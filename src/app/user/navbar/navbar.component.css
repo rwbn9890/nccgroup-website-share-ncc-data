@@ -1,0 +1,46 @@
+ .navbar-brand {
+  height: 66px;
+  z-index: 12;
+}
+
+.navbar{
+  background-color: #f1f4fa;
+  color: #000;
+}
+.navbar-nav{
+  font-weight: bold;
+}
+
+.btnContactUs {
+  border-radius: 1rem;
+} 
+
+a:hover {
+  text-decoration: none;
+  color: #21e0bd;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.btn:hover {
+  background-color: #000;
+  text-decoration: none;
+  color: #21e0bd;
+  background: #000;
+  border-color: #000 #000 #000 #000;
+}
+
+.btn {
+  background: #21e0bd;
+  background-color: rgba(33, 224, 189, 1);
+  color: #000;
+  border-color: #21e0bd #21e0bd #21e0bd #21e0bd;
+  font-family: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 32px;
+  letter-spacing: 2px;
+}

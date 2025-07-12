@@ -1,0 +1,14 @@
+<div class="flow-container bg-white rounded">
+  <hr />
+  <h1 class="font-weight-light text-center">
+    A W A R D S & A C H I V E M E N T S
+  </h1>
+  <hr />
+</div>
+<div class="flow-container py-2 bg-white rounded mb-5">
+  <img
+    *ngFor="let item of items; let i = index"
+    [lightbox]="i"
+    [src]="item.data.thumb"
+  />
+</div>

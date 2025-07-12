@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<div class="heading" style="background-color: #f1f4fa;padding-top: 0.5rem;">
+  <hr />
+  <h1 class="font-weight-light text-center">
+    Awards And Achievements - Gallery
+  </h1>
+  <hr />
+</div>
+<div class="flow-container rounded pd-5" style="background-color: #f1f4fa;">
+  <img
+    *ngFor="let item of items; let i = index"
+    [lightbox]="i"
+    [src]="item.data.thumb"
+  />
+  <!-- <div class="container pt-1">
+    <a
+      class="btn btn-primary d-block rounded"
+      *ngIf="galleryLimit < galleryLength"
+      (click)="showMoreImages()"
+    >
+      Show More
+    </a>
+    <a
+      class="btn btn-warning d-block rounded"
+      *ngIf="galleryLimit >= galleryLength"
+      (click)="showLessImages()"
+    >
+      Show Less
+    </a>
+  </div> -->
+</div>
+<app-dest-footer></app-dest-footer>
+<app-socialview></app-socialview>

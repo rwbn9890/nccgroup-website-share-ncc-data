@@ -1,0 +1,97 @@
+.flow-container {
+  background-color: #066352;
+}
+
+.generalInquiries h3 {
+  font-size: 50px;
+  font-family: "Raleway", sans-serif;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.generalInquiries {
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 20%;
+}
+
+.btn-centered-cls {
+  background-color: aquamarine;
+  color: black;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+}
+
+.card {
+  background: transparent;
+  border-color: #21e0bd;
+}
+.card-header {
+  background-color: aquamarine;
+}
+
+.fa {
+  font-size: x-large;
+  color: black;
+}
+.input-group-text {
+  background-color: aquamarine;
+}
+@media screen and (max-width: 768px) {
+  .blankDiv {
+    display: none;
+  }
+  .col-6 {
+    -webkit-box-flex: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .feedback {
+    margin-left: -15px;
+  }
+  .blankDiv {
+    border-left: none;
+  }
+}
+
+/* .ng-valid[required],
+.ng-valid.required {
+  
+} */
+.error {
+  color: #ff0000;
+}
+.success {
+  color: green;
+}
+.contact-message {
+  text-align: center;
+  padding: 3rem;
+}
+
+.btn-primary {
+  background-color: aquamarine;
+  color: black;
+  border-radius: 1rem;
+}
+
+.btn-secondary {
+  border-radius: 1rem;
+}
+
+.blankDiv {
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+
+.generalInquiries{
+  border-right: solid aquamarine;
+}
+
+.form-control{
+  border: 2px solid aqua;
+  font-weight: bold;
+}

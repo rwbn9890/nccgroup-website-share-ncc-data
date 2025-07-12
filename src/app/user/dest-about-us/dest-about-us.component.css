@@ -1,0 +1,15 @@
+.container {
+  /* padding-top: 5px; */
+  font-family: "Raleway", sans-serif;
+}
+hr {
+  background-color: aquamarine;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-weight: 400 !important;
+    color: black;
+    font-size: 1.5rem;
+  }
+}

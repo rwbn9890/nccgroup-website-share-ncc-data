@@ -1,0 +1,19 @@
+<div class="flow-container shadow-lg bg-white rounded mb-2" id="banner-slider">
+  <carousel [interval]="myInterval" [(activeSlide)]="activeSlideIndex">
+    <slide *ngFor="let slide of slides; let index = index">
+      <div class="overlay-effect h-100 w-100"></div>
+      <img [src]="slide.image" alt="image slide" style="display: block;" />
+
+      <div class="carousel-caption" style="color:#fff">
+        <h1>N C C  &nbsp; G R O U P</h1>
+        <h2>We are happy serve</h2>
+        <a class="btn font-weight-light" routerLink="/contact-us" >
+          Get In Touch With Us
+        </a>
+        <p class="font-weight-light">
+          We as NIZAMUDDIN LOGISTICS PRIVATE LIMITED is as Pune based company provide all your logistics requirement for east west and south part of India.
+        </p>
+      </div>
+    </slide>
+  </carousel>
+</div>
