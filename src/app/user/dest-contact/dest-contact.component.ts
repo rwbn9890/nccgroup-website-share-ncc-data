@@ -81,13 +81,13 @@ export class DestContactComponent implements OnInit {
 
     this.loading = true;
 
-    this.service
-      .registerInquiries(
-        this.f.name.value,
-        this.f.email.value,
-        this.f.phone.value,
-        this.f.message.value
-      )
+  this.service
+  .registerInquiries({
+    name: this.f.name.value,
+    email: this.f.email.value,
+    phone: this.f.phone.value,
+    message: this.f.message.value
+  })
       .pipe(first())
       .subscribe(
         data => {
