@@ -46,6 +46,7 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
+              "sourceMap": false,
               "budgets": [
                 {
                   "type": "initial",
@@ -68,8 +69,7 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "nccgroups:build:production",
-              "sourceMap": false
+              "browserTarget": "nccgroups:build:production"
             }
           }
         },
